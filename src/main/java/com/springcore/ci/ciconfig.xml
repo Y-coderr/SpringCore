@@ -11,8 +11,11 @@
         <constructor-arg value="12"/>
     </bean>
     <bean id="com.springcore.ci.Addition" class="add">
-        <constructor-arg value="21"/>
-        <constructor-arg value="12"/>
+        <constructor-arg value="21" type="int" index="0"/>
+        <constructor-arg value="12" type="int" index="1"/>
+        <!-- in this case I am using two parameters for solving the ambiguty problem-->
+        <!-- 1. type = there are we having two or more constructor with diffrent datatype to solve this we givinvg the datatype in this tag-->
+        <!-- 2. index = using this parameter we can set the index of our value in constructor-->
     </bean>
 
 </beans>

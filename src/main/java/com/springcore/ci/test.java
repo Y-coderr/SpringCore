@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class test {
     public static void main(String[] args) {
-        ApplicationContext context =new ClassPathXmlApplicationContext("file:ciconfig.xml");
+        ApplicationContext context =new ClassPathXmlApplicationContext("ciconfig.xml");
         Addition add=(Addition)context.getBean("add");
         add.doSum();
     }
