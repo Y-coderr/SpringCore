@@ -9,4 +9,8 @@ http://www.springframework.org/schema/beans ">
         <property name="price" value="8.5"/>
     </bean>
 
+    <bean class="com.springcore.lifecycle.Example" name="example">
+        <property name="subject" value="Maths"/>
+    </bean>
+
 </beans>

@@ -29,7 +29,7 @@ public class Pepsi implements InitializingBean, DisposableBean {
 
     @Override
     public void destroy() throws Exception {
-
+        System.out.println("Destroy working");
     }
 
     @Override
