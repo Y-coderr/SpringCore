@@ -18,8 +18,11 @@
     <!-- Bean for standalone collection -->
     <bean id="person1" class="com.springcore.standalone.collections.Person">
         <property name="person1">
-            <ref bean="mybestfriends"/>
+           <ref bean="mybestfriends"/>
         </property>
     </bean>
+
+    <!-- Autowiring example -->
+    <bean id="emp1" class="com.springcore.auto.wire.annotation.Emp" autowire="byName"/>
 
 </beans>
